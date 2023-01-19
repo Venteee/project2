@@ -105,3 +105,51 @@ h2 {
     color: white;
     margin-top: 25px;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content a{
+    font-size: 12px;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a:hover {
+    color: purple;
+    font-size: 16px;
+}
+
+.menu button {
+    padding: 30px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.menu button::after {
+    content: "";
+    background-image: url(./img/arrow.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 38%;
+    left: 100%;
+    width: 20px;
+    height: 20px;
+}
